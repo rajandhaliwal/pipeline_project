@@ -1,0 +1,43 @@
+pipeline {
+    
+  agent any  
+    
+  stages {
+      
+    stage ('build'){
+        
+   steps { echo 'this is build stage'
+   
+   }
+  
+        
+        
+    }  
+  
+  
+  stage ('deploy in qa server'){
+        
+   steps { echo 'copy the jar files to qa server'
+   
+   }
+  
+        
+        
+    }      
+    
+    
+    stage ('test'){
+        
+   steps { echo 'run the smoke test cases'
+   
+   }
+  
+        
+        
+    }    
+      
+  }  
+    
+    
+    
+}
